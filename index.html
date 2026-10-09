@@ -26,7 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 15px;
+    padding: 10px;
     margin: 0;
     background-color: #000000;
 }
@@ -53,8 +53,8 @@ body {
     border: 1px solid #aa8d28; /* Gold border */
     border-radius: 20px;
     width: 100%;
-    max-width: 480px;
-    padding: 30px 20px;
+    max-width: 440px;
+    padding: 20px 18px;
     box-shadow: 0 0 35px 5px rgba(225, 185, 45, 0.15);
     text-align: center;
     display: flex;
@@ -65,12 +65,12 @@ body {
 /* Logo Styles */
 .logo-container {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 
 .main-logo {
     width: 100%;
-    max-width: 250px;
+    max-width: 180px;
     height: auto;
     object-fit: contain;
 }
@@ -82,22 +82,22 @@ body {
     border: 1px solid #ffd861;
     background: #000000;
     border-radius: 20px;
-    padding: 6px 14px;
-    font-size: 11px;
+    padding: 4px 10px;
+    font-size: 10px;
     font-weight: 700;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
     white-space: nowrap;
 }
 
 /* Title Styling */
 .title-header {
-    margin-bottom: 22px;
+    margin-bottom: 10px;
 }
 
 .name-line {
-    font-size: 28px;
+    font-size: 22px;
     color: #ffffff;
     font-weight: 700;
     line-height: 1.1;
@@ -105,7 +105,7 @@ body {
 }
 
 .trading-line {
-    font-size: 36px;
+    font-size: 28px;
     color: #ffca27;
     font-weight: 800;
     line-height: 1.1;
@@ -113,12 +113,12 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Hindi Description Text (Single Line View) */
+/* Hindi Description Text */
 .description-text {
-    font-size: 15px;
+    font-size: 13px;
     color: #dfe7e3;
-    line-height: 1.5;
-    margin-bottom: 25px;
+    line-height: 1.4;
+    margin-bottom: 12px;
     width: 100%;
     font-weight: 400;
 }
@@ -129,32 +129,32 @@ body {
     border: 1px solid #2d343a;
     border-radius: 12px;
     width: 100%;
-    padding: 15px;
-    margin-bottom: 25px;
+    padding: 10px 12px;
+    margin-bottom: 14px;
     text-align: center;
 }
 
 .features-header {
-    font-size: 15px;
+    font-size: 13px;
     color: #c99519;
     font-weight: 700;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     text-transform: uppercase;
 }
 
 .features-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 6px;
     padding: 0 5px;
     text-align: left;
 }
 
 .feature-item {
-    font-size: 14px;
+    font-size: 12px;
     color: #f1ebd5;
-    line-height: 1.4;
-    white-space: nowrap; /* सुनिश्चित करता है कि टेक्स्ट एक ही लाइन में रहे */
+    line-height: 1.3;
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -162,7 +162,7 @@ body {
 /* Checkmark color */
 .checkmark {
     color: #ffca27;
-    margin-right: 8px;
+    margin-right: 6px;
     font-weight: bold;
 }
 
@@ -172,7 +172,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 12px;
 }
 
 /* Large Telegram Button Styling */
@@ -181,14 +181,14 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 380px;
-    height: 65px;
-    padding: 12px 24px;
+    max-width: 360px;
+    height: 52px;
+    padding: 10px 20px;
     border: 2px solid #55cfff;
-    border-radius: 15px;
+    border-radius: 12px;
     color: #ffffff;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 800;
     box-shadow: 0 6px 20px rgba(11, 150, 212, 0.4);
     background: radial-gradient(circle, #29bbef 0%, #0076a6 100%);
@@ -205,32 +205,37 @@ body {
 /* Disclaimer text */
 .disclaimer {
     color: #8fa1ac;
-    font-size: 11px;
-    line-height: 1.6;
-    max-width: 340px;
+    font-size: 10px;
+    line-height: 1.4;
+    max-width: 320px;
     margin: 0 auto;
 }
 
 /* Responsive adjustments */
 @media (max-width: 480px) {
     .feature-item {
-        white-space: normal; /* मोबाइल स्क्रीन छोटी होने पर टेक्स्ट ओवरफ्लो न हो */
+        white-space: normal;
     }
 }
 
-@media (max-width: 380px) {
+@media (max-height: 680px) {
     .trading-card {
-        padding: 20px 15px;
+        padding: 15px 12px;
     }
-    .name-line {
-        font-size: 24px;
+    .main-logo {
+        max-width: 140px;
     }
-    .trading-line {
-        font-size: 32px;
+    .description-text {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    .features-container {
+        padding: 8px;
+        margin-bottom: 10px;
     }
     .join-button {
-        font-size: 18px;
-        height: 60px;
+        height: 48px;
+        font-size: 16px;
     }
 }
 </style>
@@ -262,7 +267,7 @@ body {
       Trading aur financial markets se judi educational information aur market updates paane ke liye hamare Telegram channel se judein.
     </p>
 
-    <!-- 5. FEATURES BOX (Single Line per Point) -->
+    <!-- 5. FEATURES BOX -->
     <section class="features-container">
       <div class="features-header">FEATURES</div>
       <div class="features-list">
