@@ -3,202 +3,65 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pankaj Bhardwaj Trading - Join Telegram</title>
 
-<title>Pankaj Bhardwaj Trading</title>
-<meta name="description" content="Join Pankaj Bhardwaj Trading on Telegram for trading education and market updates.">
+<!-- External Fonts (Similar to image) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
+/* Basic Page Reset */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-}
-
+/* Global Styles based on the image */
 body {
-  font-family: Arial, sans-serif;
-  background: #05080d;
-  color: #ffffff;
+    font-family: 'Poppins', sans-serif; /* English text font */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 15px;
+    margin: 0;
 }
 
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 25px 15px;
-  text-align: center;
-  background:
-    radial-gradient(ellipse at top, #29200b 0%, #101722 40%, #05080d 78%);
+/* Specific Hindi Font Setup for Devanagari blocks */
+.hindi-text {
+    font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;
 }
 
-.card {
-  width: 100%;
-  max-width: 480px;
-  padding: 25px 22px 30px;
-  border: 1px solid #c99519;
-  border-radius: 24px;
-  background: linear-gradient(160deg, #15191e, #080c12);
-  box-shadow: 0 0 35px #e5a90020;
+/* Hero Section / Fullscreen Container with the gold radial gradient */
+.hero-container {
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at center, #231c0d 0%, #1a150a 40%, #000000 85%, #000000 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-/* TRADING LOGO */
-.logo {
-  display: block;
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  margin: 0 auto 20px;
-  border-radius: 50%;
-  object-fit: contain;
+/* The Main Content Card */
+.trading-card {
+    background: linear-gradient(135deg, #111417 0%, #080c10 100%);
+    border: 1px solid #aa8d28; /* Gold border */
+    border-radius: 20px;
+    width: 100%;
+    max-width: 440px; /* Constrains the width like a phone */
+    padding: 30px 20px;
+    box-shadow: 0 0 35px 5px rgba(225, 185, 45, 0.15); /* Soft gold shadow */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.tag {
-  display: inline-block;
-  color: #ffd34d;
-  border: 1px solid #9c751a;
-  border-radius: 30px;
-  padding: 9px 12px;
-  font-size: 11px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-h1 {
-  font-size: 30px;
-  line-height: 1.3;
-  margin: 20px 0 12px;
-  color: #ffffff;
-}
-
-h1 span {
-  color: #ffc928;
-}
-
-p {
-  color: #d0d7e0;
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-.features {
-  text-align: left;
-  margin: 22px 0;
-  padding: 15px;
-  border: 1px solid #34302a;
-  border-radius: 13px;
-  background: #11161d;
-  line-height: 2.1;
-  color: #f0e7d0;
-  font-size: 14px;
-}
-
-/* LARGE TELEGRAM BUTTON */
-.join {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 76px;
-  padding: 20px 12px;
-  margin-top: 25px;
-  border: 2px solid #65c9ff;
-  border-radius: 16px;
-  background: linear-gradient(135deg, #35b8f2, #087cbe);
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 22px;
-  font-weight: 800;
-  line-height: 1.3;
-  box-shadow: 0 7px 25px #168bd455;
-  transition: 0.2s ease;
-}
-
-.join:hover {
-  background: linear-gradient(135deg, #55c9ff, #0874b4);
-  transform: translateY(-2px);
-}
-
-.note {
-  margin-top: 20px;
-  color: #a4adba;
-  font-size: 11px;
-  line-height: 1.7;
-}
-
-@media (max-width: 380px) {
-  .card {
-    padding: 20px 15px;
-  }
-
-  .logo {
-    max-width: 240px;
-  }
-
-  h1 {
-    font-size: 26px;
-  }
-
-  .join {
-    font-size: 19px;
-    min-height: 70px;
-  }
-}
-</style>
-</head>
-
-<body>
-
-<section class="hero">
-  <main class="card">
-
-    <img
-      class="logo"
-      src="Premium Trading Bull Emblem.png"
-      alt="Pankaj Bhardwaj Trading Logo"
-    >
-
-    <div class="tag">
-      TRADING EDUCATION & MARKET UPDATES
-    </div>
-
-    <h1>
-      PANKAJ BHARDWAJ<br>
-      <span>TRADING</span>
-    </h1>
-
-    <p>
-      Trading aur financial markets se judi
-      educational information aur market updates
-      paane ke liye hamare Telegram channel se judein.
-    </p>
-
-    <div class="features">
-      ✓ Trading Learning Resources<br>
-      ✓ Market-Related Educational Updates<br>
-      ✓ Trading Concepts Ki Jaankari<br>
-      ✓ Risk Management Education
-    </div>
-
-    <a
-      class="join"
-      href="https://t.me/+TW7Y7HnswUU2Yjhl"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      ✈ JOIN TELEGRAM NOW
-    </a>
-
-    <div class="note">
-      Disclaimer: Trading involves financial risk.
-      Content is for educational purposes only.
-      No profit or return is guaranteed.
-    </div>
-
-  </main>
-</section>
-
-</body>
-</html>
+/* Logo Styles */
+.logo-container {
+    width: 100%;
+    margin-bottom: 15px;
