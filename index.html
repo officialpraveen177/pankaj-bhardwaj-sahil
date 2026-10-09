@@ -1,162 +1,297 @@
-```html
 <!DOCTYPE html>
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pankaj Bhardwaj Trading</title>
+<title>Pankaj Bhardwaj Trading - Join Telegram</title>
+
+<!-- External Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
+/* Basic Page Reset */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+/* Global Styles */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #07111f;
-  color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+    margin: 0;
+    background-color: #000000;
 }
 
-.hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 25px 16px;
-  text-align: center;
-  background: radial-gradient(circle at top, #173b52, #07111f 65%);
+/* Hindi Font Setup */
+.hindi-text {
+    font-family: 'Noto Sans Devanagari', 'Poppins', sans-serif;
 }
 
-.card {
-  width: 100%;
-  max-width: 480px;
-  padding: 35px 22px;
-  border: 1px solid #24516b;
-  border-radius: 22px;
-  background: #0a192a;
-  box-shadow: 0 10px 40px #0006;
+/* Hero Section / Fullscreen Container */
+.hero-container {
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at center, #231c0d 0%, #1a150a 40%, #000000 85%, #000000 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-.tag {
-  display: inline-block;
-  color: #5ef2bd;
-  border: 1px solid #287c68;
-  border-radius: 30px;
-  padding: 8px 12px;
-  font-size: 11px;
-  letter-spacing: 1px;
+/* Main Content Card */
+.trading-card {
+    background: linear-gradient(135deg, #111417 0%, #080c10 100%);
+    border: 1px solid #aa8d28; /* Gold border */
+    border-radius: 20px;
+    width: 100%;
+    max-width: 440px;
+    padding: 20px 18px;
+    box-shadow: 0 0 35px 5px rgba(225, 185, 45, 0.15);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-h1 {
-  font-size: 32px;
-  line-height: 1.3;
-  margin: 22px 0 12px;
+/* Logo Styles */
+.logo-container {
+    width: 100%;
+    margin-bottom: 8px;
 }
 
-h1 span {
-  color: #5ef2bd;
+.main-logo {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    object-fit: contain;
 }
 
-p {
-  color: #c2d0de;
-  font-size: 16px;
-  line-height: 1.7;
+/* Small Tag below logo */
+.tagline-chip {
+    display: inline-block;
+    color: #ffd861;
+    border: 1px solid #ffd861;
+    background: #000000;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    white-space: nowrap;
 }
 
-.features {
-  text-align: left;
-  margin: 24px 0;
-  line-height: 2.1;
-  color: #e5edf5;
-  font-size: 14px;
+/* Title Styling */
+.title-header {
+    margin-bottom: 10px;
 }
 
-/* BIG TELEGRAM BUTTON */
-.join {
-  display: block;
-  width: 100%;
-  background: #229ed9;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 23px;
-  padding: 23px 12px;
-  border-radius: 15px;
-  box-shadow: 0 6px 22px #229ed966;
-  margin-top: 25px;
-  text-align: center;
-  transition: 0.2s ease;
+.name-line {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
 }
 
-.join:hover {
-  background: #1688bd;
-  transform: scale(1.02);
-}
-
-.note {
-  font-size: 11px;
-  color: #91a2b5;
-  margin-top: 20px;
-  line-height: 1.6;
-}
-
-@media (max-width: 380px) {
-  h1 {
+.trading-line {
     font-size: 28px;
-  }
+    color: #ffca27;
+    font-weight: 800;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
 
-  .join {
-    font-size: 20px;
-    padding: 21px 8px;
-  }
+/* Hindi Description Text */
+.description-text {
+    font-size: 13px;
+    color: #dfe7e3;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    width: 100%;
+    font-weight: 400;
+}
+
+/* FEATURES BOX Styling */
+.features-container {
+    background: #111418;
+    border: 1px solid #2d343a;
+    border-radius: 12px;
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.features-header {
+    font-size: 13px;
+    color: #c99519;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 0 5px;
+    text-align: left;
+}
+
+.feature-item {
+    font-size: 12px;
+    color: #f1ebd5;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Checkmark color */
+.checkmark {
+    color: #ffca27;
+    margin-right: 6px;
+    font-weight: bold;
+}
+
+/* Telegram Button Container - Perfectly Centered */
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+/* Large Telegram Button Styling */
+.join-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 360px;
+    height: 52px;
+    padding: 10px 20px;
+    border: 2px solid #55cfff;
+    border-radius: 12px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 800;
+    box-shadow: 0 6px 20px rgba(11, 150, 212, 0.4);
+    background: radial-gradient(circle, #29bbef 0%, #0076a6 100%);
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+}
+
+/* Hover effect */
+.join-button:hover {
+    box-shadow: 0 4px 15px rgba(11, 150, 212, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Disclaimer text */
+.disclaimer {
+    color: #8fa1ac;
+    font-size: 10px;
+    line-height: 1.4;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .feature-item {
+        white-space: normal;
+    }
+}
+
+@media (max-height: 680px) {
+    .trading-card {
+        padding: 15px 12px;
+    }
+    .main-logo {
+        max-width: 140px;
+    }
+    .description-text {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+    .features-container {
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+    .join-button {
+        height: 48px;
+        font-size: 16px;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<section class="hero">
-  <div class="card">
+<div class="hero-container">
+  <main class="trading-card">
 
-    <div class="tag">
+    <!-- 1. LOGO AREA -->
+    <div class="logo-container">
+      <img src="pankaj.png" alt="Pankaj Bhardwaj Trading Logo" class="main-logo">
+    </div>
+
+    <!-- 2. TAGLINE TAG -->
+    <div class="tagline-chip">
       TRADING EDUCATION & MARKET UPDATES
     </div>
 
-    <h1>
-      PANKAJ BHARDWAJ<br>
-      <span>TRADING</span>
-    </h1>
+    <!-- 3. MAIN TITLE -->
+    <header class="title-header">
+      <div class="name-line">PANKAJ BHARDWAJ</div>
+      <div class="trading-line">TRADING</div>
+    </header>
 
-    <p>
-      Trading aur financial markets se judi
-      educational information aur market updates
-      paane ke liye hamare Telegram channel se judein.
+    <!-- 4. HINDI DESCRIPTION TEXT -->
+    <p class="description-text hindi-text">
+      Trading aur financial markets se judi educational information aur market updates paane ke liye hamare Telegram channel se judein.
     </p>
 
-    <div class="features">
-      ✓ Trading Learning Resources<br>
-      ✓ Market-Related Educational Updates<br>
-      ✓ Trading Concepts Ki Jaankari<br>
-      ✓ Risk Management Education
+    <!-- 5. FEATURES BOX -->
+    <section class="features-container">
+      <div class="features-header">FEATURES</div>
+      <div class="features-list">
+        <div class="feature-item"><span class="checkmark">✓</span> Trade of Trading educational</div>
+        <div class="feature-item"><span class="checkmark">✓</span> Learn about Trading psychology</div>
+        <div class="feature-item"><span class="checkmark">✓</span> Trade Indian Financial markets</div>
+        <div class="feature-item"><span class="checkmark">✓</span> Best Trading Concepts</div>
+      </div>
+    </section>
+
+    <!-- 6. CENTERED TELEGRAM BUTTON -->
+    <div class="button-container">
+      <a href="https://t.me/your_telegram_channel" class="join-button" target="_blank" rel="noopener noreferrer">
+        ✈ JOIN TELEGRAM NOW
+      </a>
     </div>
 
-    <a class="join"
-       href="https://t.me/+TW7Y7HnswUU2Yjhl"
-       target="_blank"
-       rel="noopener noreferrer">
-       ✈ JOIN TELEGRAM NOW
-    </a>
+    <!-- 7. DISCLAIMER TEXT -->
+    <footer class="disclaimer">
+      Disclaimer: Trading involves financial risk. No content on this channel is a suggestion for a purchase. Content is for educational purposes only.
+    </footer>
 
-    <div class="note">
-      Disclaimer: Trading involves financial risk.
-      Content is for educational purposes only.
-      No profit or return is guaranteed.
-    </div>
-
-  </div>
-</section>
+  </main>
+</div>
 
 </body>
 </html>
-```
